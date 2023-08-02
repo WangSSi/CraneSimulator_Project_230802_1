@@ -3,3 +3,15 @@ Unity v2022.3.2f1
 date 230803
 
 Crane Project with Arduino
+
+// 1. Right_Joystick.cs 에 나오는 조이스틱 이벤트 실행 트리거 역할을 하는 bool함수가 값을 아두이노 조이스틱이 움직임에 따라 활성화 비활성화 되도록 하고 싶습니다.
+   
+    private void Start()  //--> Right_Joystick.cs 의 조이스틱 이벤트 실행 트리거 역할을 하는 bool함수
+    {
+        MainHookCableSpawn.Right_Joystick_Front = false; //조이스틱 전방 이벤트 실행 트리거 역할
+        MainHookCableSpawn.Right_Joystick_Back = false; //조이스틱 후방 이벤트 실행 트리거 역할
+        Crane_Operating_manager.Right_Joystick_Right = false; //조이스틱 우측 이벤트 실행 트리거 역할
+        Crane_Operating_manager.Right_Joystick_Left = false; //조이스틱 좌측 이벤트 실행 트리거 역할
+    }
+
+// 2. 아두이노 스위치로 하는 경우도 알고 싶습니다.
