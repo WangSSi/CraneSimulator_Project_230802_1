@@ -1,5 +1,0 @@
-Unity v2022.3.2f1
-
-date 230803
-
-Crane Project with Arduino
